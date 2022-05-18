@@ -5,19 +5,8 @@ body {
     font-style: normal;
 background: #FFFFFF;
 }
-/*Семантичное скрытие заглавия*/
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
+
 /*Шапка*/
     /* WebStudio */
 .logo {
@@ -111,6 +100,7 @@ color: #212121;
     font-weight: bold;
     font-size: 14px;
         line-height: 1.1;
+        text-transform: uppercase;
     }
 .requirements p {
 font-size: 14px;
@@ -132,22 +122,18 @@ color: #212121;
 }
 .details h3 {
 font-weight: 500;
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.2;
     color: #212121;
 }
-p .position  {
-font-size: 16;
+ .position {
+font-size: 16px;
     line-height: 1.2;
     color: #757575;
 }
 /*Подвал*/
 footer {
-    height: 252px;
-        width: 1600px;
-        left: 0px;
-        top: 2097px;
-        border-radius: 0px;
+   
         background-color: #2F303A; ;
 }
 footer>a>span {
@@ -158,26 +144,22 @@ footer>a>span {
     }
 .street {
     font-style: normal;
-    font-size: 14;
+    font-size: 14px;
         line-height: 1.2;
         color: #FFFFFF;
 }
 .contacts .link {
 font-style: normal;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
 }
 .contacts a {
     text-decoration: none;
 }
-/* страница Портфолио*/
+/* страница Портфолио */
 /* Style the buttons */
 .key-active {
-    border: none;
-    outline: none;
-    width: 73px;
-        height: 38px;
     background-color: #2196F6;
     color: #FFFFFF;
     cursor: pointer;
@@ -206,9 +188,14 @@ font-style: normal;
         font-weight: 700;
        color: #212121;
 }
+
+/*--Галерея фото--*/
 .gallery p {
 font-size: 16px;
     line-height: 1.9;
     font-weight: 400;
     color: #757575;
+}
+li>a {
+    text-decoration: none;
 }
