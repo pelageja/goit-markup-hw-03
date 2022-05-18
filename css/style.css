@@ -1,0 +1,203 @@
+/* Главная */
+body {
+    font-family: Roboto,sans-serif; 
+    color:#212121;
+    font-style: normal;
+background: #FFFFFF;
+}
+
+
+/*Шапка*/
+    /* WebStudio */
+.logo {
+    color: #2196F3;
+   font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+   span {
+       color:#212121;
+
+}
+   
+/*Навигация сайта*/
+   ul {
+       list-style-type: none;}
+.site-nav a {
+text-decoration: none;
+}
+   .contact a {
+       text-decoration: none;
+   }
+    .site-nav .link {
+       color: #212121;
+font-size: 14px; ;
+    line-height:1.2 ;
+    font-weight:500;
+}
+.site-nav .link:hover,
+.site-nav .link:active {
+    color: #2196F3;
+}
+.link-active {
+    color: #2196F3;
+font-size: 14px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+ /*Контакты*/
+ .contact .link {
+    color: #757575;
+    font-size: 14px;
+        line-height: 1.2;
+        font-weight: 500;
+}
+.contact .link:hover,
+.contact .link:active {
+    color: #2196F3;
+}
+
+/* Герой*/
+/* Эффективные решения для вашего бизнеса */
+.hero {
+background-color:  #2F303A;
+}
+.hero-title {
+    font-style: normal;
+font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+  color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*заказать услугу*/
+
+.button-order {
+    color: #FFFFFF;
+    font-weight: 700;
+         font-size: 16px;
+        line-height: 1.9;
+    background-color: #2196F6;
+    cursor: pointer
+    }
+.button-order:hover,
+.button-order:active {
+    background-color: #188ce8;
+}
+.button-order {
+    display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+} 
+/*Особенности*/
+.requirements h3 {
+color: #212121;
+    font-weight: bold;
+    font-size: 14px;
+        line-height: 1.1;
+    }
+.requirements p {
+font-size: 14px;
+line-height: 1.7;
+color: #757575;
+}
+
+/* Чем мы занимаемся */
+ h2 {
+   font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+color: #212121;
+}
+
+/*Наша команда*/
+.team {
+   background-color:  #F5F4FA;
+}
+.details h3 {
+font-weight: 500;
+    font-size: 16;
+    line-height: 1.2;
+    color: #212121;
+}
+p .position  {
+font-size: 16;
+    line-height: 1.2;
+    color: #757575;
+}
+/*Подвал*/
+footer {
+    height: 252px;
+        width: 1600px;
+        left: 0px;
+        top: 2097px;
+        border-radius: 0px;
+        background-color: #2F303A; ;
+}
+footer>a>span {
+    color: #FFFFFF;
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+.street {
+    font-style: normal;
+    font-size: 14;
+        line-height: 1.2;
+        color: #FFFFFF;
+}
+.contacts .link {
+font-style: normal;
+    font-size: 14;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+}
+.contacts a {
+    text-decoration: none;
+}
+/* страница Портфолио*/
+/* Style the buttons */
+.key-active {
+    border: none;
+    outline: none;
+    width: 73px;
+        height: 38px;
+    background-color: #2196F6;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500;
+        }
+         
+.key {
+   color: #212121;
+    background-color: #F5F4FA;
+    font-size: 16px;
+    line-height:1.6;
+    font-weight: 500;
+   cursor: pointer;
+}
+      .key:hover,
+.key:active {
+     color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.gallery h2 {
+    font-size: 18px;
+        line-height: 2;
+        font-weight: 700;
+       color: #212121;
+}
+.gallery p {
+font-size: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+    color: #757575;
+}
