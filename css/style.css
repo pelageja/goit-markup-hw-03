@@ -1,24 +1,35 @@
+html {
+    box-sizing:border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+
 /* Главная */
 body {
+  
     font-family: Roboto,sans-serif; 
     color:#212121;
     font-style: normal;
 background: #FFFFFF;
 }
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    }
 
 /*Шапка*/
+header {
+    border-bottom: 1px solid #ECECEC;
+}
     /* WebStudio */
 .logo {
     color: #2196F3;
@@ -37,10 +48,14 @@ background: #FFFFFF;
 /*Навигация сайта*/
    ul {
        list-style-type: none;}
-.site-nav a {
+ul.site-nav {
+    padding: 0;
+    margin: 0;
 text-decoration: none;
 }
-   .contact a {
+   ul.contact {
+       padding: 0;
+    margin: 0;
        text-decoration: none;
    }
     .site-nav .link {
@@ -61,6 +76,7 @@ font-size: 14px;
 }
  /*Контакты*/
  .contact .link {
+     
     color: #757575;
     font-size: 14px;
         line-height: 1.2;
@@ -73,39 +89,57 @@ font-size: 14px;
 
 /* Герой*/
 /* Эффективные решения для вашего бизнеса */
-.hero {
-background-color:  #2F303A;
+ .hero {
+    text-align: center;
+    margin-top: 0;
+    background-color:  #2F303A;
 }
-.hero-title {
+h1.hero-title { 
+    margin-top: 0;
+        margin-bottom: 30px;
     font-style: normal;
 font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
   color: #FFFFFF;
-    text-align: center;
     text-transform: uppercase;
 }
 /*заказать услугу*/
 
 .button-order {
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    min-width: 200px;
     color: #FFFFFF;
     font-weight: 700;
          font-size: 16px;
         line-height: 1.9;
     background-color: #2196F6;
-    cursor: pointer
-    }
+    cursor: pointer;
+    align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+
 .button-order:hover,
 .button-order:active {
     background-color: #188ce8;
 }
-.button-order {
-    display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-} 
+
 /*Особенности*/
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .requirements h3 {
 color: #212121;
     font-weight: bold;
@@ -113,23 +147,42 @@ color: #212121;
         line-height: 1.1;
         text-transform: uppercase;
     }
-.requirements p {
+    ul.requirements {
+    margin-bottom: 94;
+margin-top: 94px;
+    }
+    .requirements h3 {
+        margin-top: 0;
+        margin-bottom: 10px;;
+    }
+ .requirements p {
+    margin-top: 0;
+    margin-bottom: 0;
 font-size: 14px;
 line-height: 1.7;
 color: #757575;
 }
 
 /* Чем мы занимаемся */
+
  h2 {
+margin-top: 0;
+margin-bottom: 50px;
    font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
 color: #212121;
 }
-
+ul.employment {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /*Наша команда*/
 .team {
    background-color:  #F5F4FA;
+}
+ul.details {
+    margin: 0;
 }
 .details h3 {
 font-weight: 500;
@@ -137,7 +190,8 @@ font-weight: 500;
     line-height: 1.2;
     color: #212121;
 }
- .position {
+.details p {
+     margin-top: 0;
 font-size: 16px;
     line-height: 1.2;
     color: #757575;
@@ -147,7 +201,7 @@ footer {
    
         background-color: #2F303A; ;
 }
-footer>a>span {
+.container>a>span {
     color: #FFFFFF;
     font-weight: 700;
         font-size: 26px;
@@ -164,6 +218,9 @@ font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+}
+ul.contacts {
+    margin-bottom: 0;
 }
 .contacts a {
     text-decoration: none;

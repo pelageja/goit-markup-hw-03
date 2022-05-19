@@ -2,17 +2,21 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
-    <link rel="stylesheet"  href="./css/style.css"> 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+         />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link  rel="stylesheet" href="./css/style.css" 
+    />
+    
 </head>
 <body>
     <header class="page-header">
+        <div class="container">
         <nav>
             <a href="./index.html"class="logo">
                 Web<span>Studio</span>
@@ -23,18 +27,23 @@
                 <li><a class="link"href="./">Контакты</a></li>
             </ul>
         </nav>
+    
         <ul class="contact">
             <li><a class="link"href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="link"href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
-    <main>
+     <main>
         <section class="hero">
+            <div class="container">
             <h1 class="hero-title" >Эффективные решения  для вашего бизнеса</h1>
             <button type="button"class="button-order">Заказать услугу</button>
+            </div>
         </section>
         <section >
-            <h2 class="section-title">Особенности</h2>
+            <div class="container">
+            <h2 class="section-title visually-hidden">Особенности</h2>
            
             <ul class="requirements">
                 <li>
@@ -55,10 +64,11 @@
                     <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-       
+    </div>
 </section>
     <!--Фото чем мы занимаемся -->
 <section >
+    <div class="container">
             <h2 class="photo-report">Чем мы занимаемся</h2>
             <ul class="employment">
                 <li>
@@ -71,9 +81,11 @@
                     <img src="./images/img_2.jpg" alt=" Палитра цветов" width="370" height="294" />
                 </li>
             </ul>
+            </div>
         </section>
         <!--Фото персонала-->
         <section class="team">
+            <div class="container">
             <h2>Наша команда</h2>
             <ul class="details">
                 <li>
@@ -97,9 +109,11 @@
                     <p class="position">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer>
+        <div class="container">
         <a href="./index.html" class="logo">
             Web<span>Studio</span>
         </a>
@@ -111,6 +125,7 @@
                 <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 
