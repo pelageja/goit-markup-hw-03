@@ -24,14 +24,20 @@ background: #FFFFFF;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+    
     }
 
 /*Шапка*/
 header {
     border-bottom: 1px solid #ECECEC;
 }
+.main-nav {
+    display: flex;
+    align-items: center;
+}
     /* WebStudio */
 .logo {
+   
     color: #2196F3;
    font-family: Raleway;
     font-weight: 700;
@@ -46,19 +52,17 @@ header {
 }
    
 /*Навигация сайта*/
-   ul {
+  
+ul {
        list-style-type: none;}
 ul.site-nav {
+    display: flex;
     padding: 0;
     margin: 0;
 text-decoration: none;
 }
-   ul.contact {
-       padding: 0;
-    margin: 0;
-       text-decoration: none;
-   }
-    .site-nav .link {
+  .site-nav .link {
+margin-left: 50px;
        color: #212121;
 font-size: 14px; ;
     line-height:1.2 ;
@@ -69,14 +73,23 @@ font-size: 14px; ;
     color: #2196F3;
 }
 .link-active {
+    margin-left: 93px;
     color: #2196F3;
 font-size: 14px;
     line-height: 1.2;
     font-weight: 500;
 }
+
  /*Контакты*/
+.contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    margin-left: auto;
+}
+  
  .contact .link {
-     
+text-decoration: none;
     color: #757575;
     font-size: 14px;
         line-height: 1.2;
@@ -86,6 +99,7 @@ font-size: 14px;
 .contact .link:active {
     color: #2196F3;
 }
+
 
 /* Герой*/
 /* Эффективные решения для вашего бизнеса */
@@ -140,32 +154,45 @@ font-weight: 900;
     clip-path: inset(50%);
     margin: -1px;
 }
+ul.requirements {
+    display: flex;
+    margin-bottom: 94;
+    margin-top: 94px;
+    text-align: left;
+    
+}
+.requirements li {
+    width: 270px;
+}
 .requirements h3 {
+    
+margin-top: 0;
+    margin-bottom: 10px;
 color: #212121;
     font-weight: bold;
     font-size: 14px;
         line-height: 1.1;
         text-transform: uppercase;
     }
-    ul.requirements {
-    margin-bottom: 94;
-margin-top: 94px;
-    }
-    .requirements h3 {
-        margin-top: 0;
-        margin-bottom: 10px;;
-    }
+    
+    
  .requirements p {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 30px;
 font-size: 14px;
 line-height: 1.7;
 color: #757575;
 }
 
 /* Чем мы занимаемся */
-
+.employment {
+    display: flex;
+    margin-top: 0;
+        margin-bottom: 94px;
+}
  h2 {
+    text-align: center;
 margin-top: 0;
 margin-bottom: 50px;
    font-weight: 700;
@@ -173,18 +200,33 @@ font-size: 36px;
 line-height: 1.2;
 color: #212121;
 }
-ul.employment {
-    margin-top: 0;
-    margin-bottom: 0;
+
+    .employment li {
+margin-right: 30px;
 }
+
 /*Наша команда*/
 .team {
    background-color:  #F5F4FA;
 }
+.team h2 {
+    padding-top: 94px;
+  
+}
+.details {
+    display: flex;
+    text-align: center;
+}
+
 ul.details {
     margin: 0;
 }
+.details li {
+    margin-right: 30px;
+
+}
 .details h3 {
+    
 font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
@@ -206,6 +248,9 @@ footer {
     font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
+    }
+    .logo footer {
+        padding-top: 60px;
     }
 .street {
     font-style: normal;
