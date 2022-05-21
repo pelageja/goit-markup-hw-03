@@ -243,7 +243,7 @@ margin-top: 0;
      margin-right: 30px;
     
 }
- .duty h2 .photo-report {
+  h2.photo-report {
      display: flex;
      text-align: center;
   margin-top: 0;
@@ -252,6 +252,7 @@ margin-bottom: 50px;
 font-size: 36px;
 line-height: 1.2;
 color: #212121;
+
 }
 
     
@@ -261,14 +262,16 @@ color: #212121;
 /*Наша команда*/
 .team {
    background-color:  #F5F4FA;
+ 
 }
-.team h2 {
-    padding-top: 94px;
+ h2.team-name {background-color: aqua;
+padding-top: 94px;
     padding-bottom: 50px;
-    margin: 0;
-  
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        color: #212121;
 }
-
 ul.team-card {
     margin: 0;
     display: flex;
