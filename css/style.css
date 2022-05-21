@@ -1,3 +1,23 @@
+/*цвет основного текста  #212121*/
+/*вторичный цвет текста  #757575*/
+/*основной цвет фона     #FFFFFF*/
+/*вторичный темный фон  #2F303A*/
+/*вторичный  светлый фон   #F5F4FA*/
+/*акцент цвет            #2196F3*/
+/* акцент активный       #188CE8*/
+
+:root {
+    --main-text-color:#212121;
+--secondary-text-color:#757575;
+--fond-color:#FFFFFF;
+--fond-dark-color:#2F303A;
+--fond-light-color:#F5F4FA;
+--accent-color:#2196F3;
+--accent-active-color:#188CE8;
+}
+
+
+
 html {
     box-sizing:border-box;
 }
@@ -11,20 +31,21 @@ html {
 
 /* Главная */
 body {
-  
+  margin: 0;
     font-family: Roboto,sans-serif; 
-    color:#212121;
+    color: var(--main-text-color);
     font-style: normal;
-background: #FFFFFF;
+background-color: var(--fond-color);
 }
 
 
 .container {
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
-    
+   
+  
     }
 
 /*Шапка*/
@@ -36,6 +57,11 @@ header {
     align-items: center;
 }
     /* WebStudio */
+    .logo {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 145px;
+    }
 .logo {
    
     color: #2196F3;
@@ -86,8 +112,11 @@ font-size: 14px;
     margin-bottom: 0;
     display: flex;
     margin-left: auto;
+    padding: 0;
 }
-  
+  .tel {
+      margin-left: 50px;
+  }
  .contact .link {
 text-decoration: none;
     color: #757575;
@@ -104,23 +133,28 @@ text-decoration: none;
 /* Герой*/
 /* Эффективные решения для вашего бизнеса */
  .hero {
+display: flex;
     text-align: center;
     margin-top: 0;
-    background-color:  #2F303A;
+    
+    background-color: #2F303A;
 }
-h1.hero-title { 
-    margin-top: 0;
-        margin-bottom: 30px;
-    font-style: normal;
-font-weight: 900;
+h1.hero-title {
+    margin-top: 200px;
+    margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
   color: #FFFFFF;
     text-transform: uppercase;
+    text-align: center;
+        letter-spacing: 0.06em;
 }
 /*заказать услугу*/
 
 .button-order {
+    margin-bottom: 200px;
     border-radius: 4px;
     padding: 10px 32px;
     display: inline-block;
@@ -141,6 +175,9 @@ font-weight: 900;
     background-color: #188ce8;
 }
 
+
+
+
 /*Особенности*/
 .visually-hidden {
     position: absolute;
@@ -154,19 +191,26 @@ font-weight: 900;
     clip-path: inset(50%);
     margin: -1px;
 }
-ul.requirements {
+.features{
     display: flex;
-    margin-bottom: 94;
+    align-items: center;
+}
+ul.features {
+    letter-spacing: 0.03em;
     margin-top: 94px;
-    text-align: left;
-    
+    margin-bottom: 94px;
+   padding-left: 0;
+    }
+.features .item {
+    margin-right: 30px;
+        margin-bottom: 0;
 }
-.requirements li {
-    width: 270px;
+.features .item:nth-child(4) {
+    margin-right: 0;
 }
-.requirements h3 {
-    
-margin-top: 0;
+
+    .features h3 {
+       margin-top: 0;
     margin-bottom: 10px;
 color: #212121;
     font-weight: bold;
@@ -174,26 +218,35 @@ color: #212121;
         line-height: 1.1;
         text-transform: uppercase;
     }
-    
-    
- .requirements p {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 30px;
-font-size: 14px;
+    .features p {
+       width: 270px;
+        margin-bottom: 0px;
+        margin-top: 0;
+    font-size: 14px;
 line-height: 1.7;
 color: #757575;
 }
 
-/* Чем мы занимаемся */
-.employment {
+      /* Чем мы занимаемся */
+.duty {
     display: flex;
-    margin-top: 0;
-        margin-bottom: 94px;
+   flex-wrap: wrap;
+align-items: center;
+
 }
- h2 {
-    text-align: center;
+ul.duty {
+    padding: 0;
 margin-top: 0;
+    margin-bottom: 94px;
+}
+ li.list {
+     margin-right: 30px;
+    
+}
+ .duty h2 .photo-report {
+     display: flex;
+     text-align: center;
+  margin-top: 0;
 margin-bottom: 50px;
    font-weight: 700;
 font-size: 36px;
@@ -201,9 +254,9 @@ line-height: 1.2;
 color: #212121;
 }
 
-    .employment li {
-margin-right: 30px;
-}
+    
+
+
 
 /*Наша команда*/
 .team {
@@ -211,28 +264,35 @@ margin-right: 30px;
 }
 .team h2 {
     padding-top: 94px;
+    padding-bottom: 50px;
+    margin: 0;
   
 }
-.details {
-    display: flex;
-    text-align: center;
-}
 
-ul.details {
+ul.team-card {
     margin: 0;
+    display: flex;
+        text-align: center;
+        padding-left: 0;
 }
-.details li {
+.team-card li {
+    margin-bottom: 94px;
     margin-right: 30px;
-
-}
-.details h3 {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: #FFFFFF;
+   }
+   .team-card li:nth-child(4){
+       margin-right: 0;
+   }
+.team-card h3 {
     
 font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: #212121;
 }
-.details p {
+.team-card p {
      margin-top: 0;
 font-size: 16px;
     line-height: 1.2;
@@ -240,8 +300,15 @@ font-size: 16px;
 }
 /*Подвал*/
 footer {
-   
-        background-color: #2F303A; ;
+    display: flex;
+   background-color: #2F303A; ;
+}
+ .foot .logo {
+    display: inline-block; 
+margin-top: 60px;
+margin-bottom: 20px;
+padding: 0;
+
 }
 .container>a>span {
     color: #FFFFFF;
@@ -249,9 +316,9 @@ footer {
         font-size: 26px;
         line-height: 1.2;
     }
-    .logo footer {
-        padding-top: 60px;
-    }
+  
+       
+    
 .street {
     font-style: normal;
     font-size: 14px;
@@ -265,10 +332,15 @@ font-style: normal;
     color: rgba(255, 255, 255, 0.6);
 }
 ul.contacts {
-    margin-bottom: 0;
+    text-align: left;
+  padding-left: 0;
+  margin-top: 20px;
+    margin-bottom: 60px;
+    width: 231px;
 }
 .contacts a {
     text-decoration: none;
+    
 }
 /* страница Портфолио */
 /* Style the buttons */
@@ -312,3 +384,5 @@ font-size: 16px;
 li>a {
     text-decoration: none;
 }
+
+
