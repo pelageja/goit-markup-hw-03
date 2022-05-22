@@ -230,7 +230,7 @@ color: #757575;
       /* Чем мы занимаемся */
 .duty {
     display: flex;
-   flex-wrap: wrap;
+flex-wrap: wrap;
 align-items: center;
 
 }
@@ -243,9 +243,9 @@ margin-top: 0;
      margin-right: 30px;
     
 }
-  h2.photo-report {
-     display: flex;
-     text-align: center;
+ h2.photo-report {background-color: aqua;
+    display: flex;
+    justify-content: center;
   margin-top: 0;
 margin-bottom: 50px;
    font-weight: 700;
@@ -264,7 +264,9 @@ color: #212121;
    background-color:  #F5F4FA;
  
 }
- h2.team-name {background-color: aqua;
+ h2.team-name {
+    display: flex;
+    justify-content: center;
 padding-top: 94px;
     padding-bottom: 50px;
     font-weight: 700;
