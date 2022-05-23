@@ -228,7 +228,7 @@ color: var(--secondary-text-color);
 }
 
       /* Чем мы занимаемся */
-.duty {
+.duty { 
     display: flex;
 flex-wrap: wrap;
 align-items: center;
@@ -237,17 +237,19 @@ align-items: center;
 ul.duty {
     padding: 0;
 margin-top: 0;
-    margin-bottom: 94px;
+margin-bottom: 94px;
+   
 }
  li.list {
      margin-right: 30px;
+
     
 }
-.duty h2 {background-color: aqua;
-    display:flex;
-   text-align: center;
-  margin-top: 0;
-margin-bottom: 50px;
+ h2.photo-report {
+     display: flex;
+    justify-content: center;
+margin-top: 0;
+    margin-bottom: 50px;
    font-weight: 700;
 font-size: 36px;
 line-height: 1.2;
