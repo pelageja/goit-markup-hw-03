@@ -63,6 +63,7 @@ header {
         padding-top: 24px;
         padding-bottom: 24px;
         width: 145px;
+        
     }
 .logo {
    
@@ -87,11 +88,20 @@ ul.site-nav {
     display: flex;
     padding: 0;
     margin: 0;
+    margin-left: 93px;
+    margin-right: 331px;
 text-decoration: none;
 }
+ul.site-nav li.navy {
+     margin-right: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+ }   
+ul.site-nav li.navy:nth-child(3) {
+    margin-right: 0;
+}
   .site-nav .link {
-margin-left: 50px;
-       color: var(--main-text-color);
+color: var(--main-text-color);
 font-size: 14px; ;
     line-height:1.2 ;
     font-weight:500;
@@ -101,7 +111,7 @@ font-size: 14px; ;
     color: var(--accent-color);
 }
 .link-active {
-    margin-left: 93px;
+    
     color: var(--accent-color);
 font-size: 14px;
     line-height: 1.2;
@@ -110,11 +120,13 @@ font-size: 14px;
 
  /*Контакты*/
 .contact {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     display: flex;
-    margin-left: auto;
-    padding: 0;
+     padding: 0;
+}
+.info {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
   .tel {
       margin-left: 50px;
@@ -134,14 +146,14 @@ text-decoration: none;
 /* Герой*/
 /* Эффективные решения для вашего бизнеса */
  .hero {
-display: flex;
-    text-align: center;
+padding-bottom: 200px;
+    padding-top: 200px;
     margin-top: 0;
-    
+    text-align: center;
     background-color:var(--fond-dark-color);
 }
 h1.hero-title {
-    padding-top: 200px;
+    
     margin:0;
     margin-bottom: 30px;
         font-style: normal;
@@ -156,7 +168,7 @@ h1.hero-title {
 /*заказать услугу*/
 
 .button-order {
-    margin-bottom: 200px;
+    
     border-radius: 4px;
     padding: 10px 32px;
     display: inline-block;
@@ -194,14 +206,14 @@ h1.hero-title {
     align-items: center;
 }
 ul.features {
+    margin:0;
     letter-spacing: 0.03em;
-    margin-top: 94px;
-    
-   padding-left: 0;
+     padding-left: 0;
     }
 .features .item {
     margin-right: 30px;
         margin-bottom: 0;
+        width: 270px;
 }
 .features .item:nth-child(4) {
     margin-right: 0;
@@ -209,14 +221,14 @@ ul.features {
 .features h3 {
        margin-top: 0;
     margin-bottom: 10px;
-color: var(--main-text-color);
+   color: var(--main-text-color);
     font-weight: bold;
     font-size: 14px;
         line-height: 1.1;
         text-transform: uppercase;
     }
     .features p {
-       width: 270px;
+       
         margin-bottom: 0px;
         margin-top: 0;
     font-size: 14px;
@@ -226,23 +238,27 @@ color: var(--secondary-text-color);
 
       /* Чем мы занимаемся */
 .duty { 
-    display: flex;
-flex-wrap: wrap;
-align-items: center;
+    margin: 0;
+padding-bottom: 94px;
+padding-top: 0;
 
 }
-ul.duty {
+ul.photo-duty {
+    display: flex;
     padding: 0;
 margin-top: 0;
-
+margin-bottom: 0;
    }
  li.list {
+     display: block;
      margin-right: 30px;
 }
+li.list:nth-child(3) {
+    margin-right: 0;
+}
  h2.photo-report {
-     display: flex;
-    justify-content: center;
-    margin:auto ;
+ text-align: center;  
+ margin-top: 0;  
 margin-bottom: 50px;
    font-weight: 700;
 font-size: 36px;
@@ -256,11 +272,9 @@ color: var(--main-text-color);
  
 }
  h2.team-name {
-    display: flex;
-    justify-content: center;
+   text-align: center;
     margin: 0;
-
-    padding-bottom: 50px;
+margin-bottom: 50px;
     font-weight: 700;
         font-size: 36px;
         line-height: 1.2;
@@ -271,11 +285,10 @@ ul.team-card {
     display: flex;
         text-align: center;
         padding-left: 0;
-        
-}
+        }
 .team-card li {
-
-    margin-right: 30px;
+    display: block;
+ margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         background-color: var(--fond-color);
@@ -284,29 +297,34 @@ ul.team-card {
        margin-right: 0;
    }
 .team-card h3 {
-    
-font-weight: 500;
+    margin:0;
+    margin-bottom: 10px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     color: var(--main-text-color);
 }
 .team-card p {
-     margin-top: 0;
+     margin: 0;
 font-size: 16px;
     line-height: 1.2;
     color: var(--secondary-text-color);
 }
+.name {
+    padding-top:30px ;
+    padding-bottom: 30px;
+}
 /*Подвал*/
 footer {
-    display: flex;
-   background-color: var(--fond-dark-color); ;
+background-color: var(--fond-dark-color); ;
 }
- .foot .logo {
-    display: inline-block; 
-margin-top: 60px;
-margin-bottom: 20px;
-padding: 0;
-
+.foot {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+footer .logo {
+    display: inline-block;
+    padding: 0;
 }
 .container>a>span {
     color: var(--fond-color);
@@ -314,10 +332,7 @@ padding: 0;
         font-size: 26px;
         line-height: 1.2;
     }
-  
-       
-    
-.street {
+  .street {
     font-style: normal;
     font-size: 14px;
         line-height: 1.2;
@@ -332,14 +347,21 @@ font-style: normal;
 ul.contacts {
     text-align: left;
   padding-left: 0;
+  margin: 0;
+  margin-right: 0;
   margin-top: 20px;
-    margin-bottom: 60px;
-    width: 231px;
+   
 }
-.contacts a {
-    text-decoration: none;
+ ul.contacts li.information{
+    margin-top: 9px;
+}
+
     
-}
+
+
+   
+    
+
 /* страница Портфолио */
 /* Style the buttons */
 ul.box {
@@ -398,7 +420,6 @@ margin-top: 0;
  .link-gallery {
     margin-right: 30px;
     box-sizing: border-box;
-    border-bottom: 1px solid #EEEEEE;
     margin-bottom: 30px;
 }
 .gallery li:nth-child( n + 7) {
@@ -407,13 +428,11 @@ margin-top: 0;
 .gallery li:nth-child( 3n + 3) {
     margin-right: 0;
 }
-
-
-
 .gallery h2 {
+    margin-top: 0;
     margin-right: auto;
     margin-left: 24px;
-    margin-top: 20px;
+   padding-top: 20px;
     margin-bottom: 4px;
     font-size: 18px;
         line-height: 2;
@@ -421,7 +440,13 @@ margin-top: 0;
         letter-spacing: 0.06em;
        color: var(--main-text-color);
 }
-
+.comment {
+   
+    border-bottom: 1px solid #EEEEEE;
+    border-right:1px solid #EEEEEE; 
+    border-left: 1px solid #EEEEEE;
+    
+}
 
 .gallery p {
     margin-right: auto;
