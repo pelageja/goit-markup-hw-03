@@ -260,11 +260,8 @@ margin-bottom: 0;
 li.list:nth-child(3) {
     margin-right: 0;
     }
-img .list {
-    display: block;
-}
-
- h2.photo-report {
+ 
+h2.photo-report {
  text-align: center;  
  margin-top: 0;  
 margin-bottom: 50px;
@@ -430,10 +427,8 @@ margin-bottom: 0;
 
 }
  .link-gallery {
-     display: block;
-    margin-right: 30px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
+      margin-right: 30px;
+     margin-bottom: 30px;
 }
 .gallery li:nth-child( n + 7) {
     margin-bottom: 0;
